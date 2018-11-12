@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee</title>
+</head>
+<body>
+    <header>
+        Welcome to Stumptown Coffee!
+        <div>What would you like to drink?</div>
+    </header>
+
+    <form id="coffee-form">
+        <label for="answer1">Grande Frappuccino</label>
+        <input type="checkbox" name="answer1" id="answer1">
+        <label for="answer2">Flat White</label>
+        <input type="checkbox" name="answer2" id="answer2">
+        <label for="answer3">Single origin 12-ounce Ecuadorian roast with pine nut milk</label>
+        <input type="checkbox" name="answer3" id="answer3">
+
+        <div>
+            <button id="coffee-question">Submit</button>
+        </div>
+    </form>
+
+    <script type="module" src="./js/question-app.js"></script>
+</body>
+</html>
