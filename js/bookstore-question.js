@@ -32,16 +32,16 @@ export default class BookstoreForm {
         let dom = makeTemplate();
         const bookstoreForm = dom.querySelector('#bookstore-form');
         const elements = bookstoreForm.elements;
-        console.log('sup', elements.answer.value); 
         const bookstoreAnswer = {}; 
-
+        
         bookstoreAnswer.name = elements.answer.value; 
+        
         
         bookstoreForm.addEventListener('submit', event => {
             event.preventDefault();
-            questionApi.add(); 
-            console.log('hello', bookstoreAnswer.name);
-            window.location.href = '/main.html';
+            questionApi.add(elements.answer.value); 
+    
+            // window.location.href = '/main.html';
         }); 
         return dom; 
     }
