@@ -31,8 +31,3 @@ export default class App {
         return dom;
     }
 }
-
-
-
-
-
