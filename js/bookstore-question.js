@@ -1,5 +1,4 @@
 import html from './html.js'; 
-// import qusetionApi from './question-api.js'; 
 import questionApi from './question-api.js';
 
 function makeTemplate() {
@@ -36,12 +35,11 @@ export default class BookstoreForm {
         
         bookstoreAnswer.name = elements.answer.value; 
         
-        
         bookstoreForm.addEventListener('submit', event => {
             event.preventDefault();
             questionApi.add(elements.answer.value); 
     
-            // window.location.href = '/main.html';
+            window.location.href = '/main.html';
         }); 
         return dom; 
     }
