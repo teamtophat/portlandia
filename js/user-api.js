@@ -5,6 +5,13 @@ function saveUser() {
 }
 
 const userApi = {
+    get() {
+        const json = localStorage.getItem('users');
+        if(json) {
+            users = JSON.parse(json);
+        }
+        return users;
+    },
     add(user) {
         users.push({
             name: user.name,
