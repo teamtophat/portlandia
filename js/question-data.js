@@ -1,12 +1,12 @@
-let resultData = [ 
-    {
-        name: 'visitor',
-        score: [],
+// let resultData = [ 
+//     {
+//         name: 'visitor',
+//         score: [],
         
-    }
+//     }
 
 
-]
+// ]
 
 
-export default resultData;
+// export default resultData;
