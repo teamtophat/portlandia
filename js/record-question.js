@@ -30,11 +30,7 @@ export default class RecordForm {
     render(){
         let dom = makeTemplate(); 
         const recordForm = dom.querySelector('#record-form'); 
-        const elements = recordForm.elements; 
-        // const recordAnswer = {}; 
-
-        // recordAnswer.recordPoint = elements.answer.value; 
-        console.log('hi', elements.answer.selected); 
+        const elements = recordForm.elements;  
 
         recordForm.addEventListener('submit', event => {
             event.preventDefault();
