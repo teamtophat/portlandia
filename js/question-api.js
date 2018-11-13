@@ -8,9 +8,14 @@ function saveQuestions() {
 
 const questionApi = {
     getAll() {
+        const json = localStorage.getItem('questionAnswers'); 
+        if(json) {
+            questionAnswers = JSON.parse(json); 
+        }
         return questionAnswers; 
     },
     add(answerValue) {
+        this.getAll(); 
         questionAnswers.push(answerValue); 
         saveQuestions(); 
     }
