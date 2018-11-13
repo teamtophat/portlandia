@@ -31,10 +31,7 @@ export default class BookstoreForm {
         let dom = makeTemplate();
         const bookstoreForm = dom.querySelector('#bookstore-form');
         const elements = bookstoreForm.elements;
-        const bookstoreAnswer = {}; 
-        
-        bookstoreAnswer.name = elements.answer.value; 
-        
+                
         bookstoreForm.addEventListener('submit', event => {
             event.preventDefault();
             questionApi.add(elements.answer.value); 
