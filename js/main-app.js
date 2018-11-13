@@ -13,6 +13,7 @@ function makeTemplate() {
             <section class="sign-in-section">
                 <h2>Sign In<h2>
             </section>
+            <section class="invite-section"></section>
         </main>
     `;
 }
@@ -20,10 +21,7 @@ function makeTemplate() {
 
 export default class App {
     constructor() {
-        this.banana = {
-            color: 'yellow',
-            size: 'medium'
-        };
+        this.userData = userApi.get();
     }
     render() {
         const dom = makeTemplate();
@@ -34,6 +32,10 @@ export default class App {
         });
 
         signInSection.appendChild(signIn.render());
+
+        // const inviteSection = dom.querySelector('.invite-section');
+        // const invite = new SignIn(this.userData);
+        // inviteSection.appendChild(invite.showUser());
 
         return dom;
     }
