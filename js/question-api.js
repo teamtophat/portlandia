@@ -18,17 +18,7 @@ const questionApi = {
         this.getAll(); 
         questionAnswers.push(answerValue); 
         saveQuestions(); 
-    },
-
-    getResults(){
-        const scores = this.getAll();
-        const totalScore = scores.reduce((a, b) => a + b);
-        if(totalScore <= 8) {
-            console.log('hi', totalScore);
-            window.location.href = '../result-californian.html';
-        }     
     }
 };
-
 
 export default questionApi; 
