@@ -20,7 +20,7 @@ header {
     z-index: -4;
 }
 body {
-    background-image: url('https://cdn.pixabay.com/photo/2016/03/08/21/50/watercolor-1244885_1280.jpg');
+    background-image: url('rain.jpg');
     background-size: 15%;
     object-fit: fill; 
     opacity: 0.9;
