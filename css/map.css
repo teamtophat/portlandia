@@ -1,4 +1,10 @@
-#mapid { height: 500px; }
+#mapid { 
+    height: 400px;
+    max-width: 600px;
+}
 img {
     max-width:100%;
+}
+#record-pic.img {
+    max-width: 100px;
 }
