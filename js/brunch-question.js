@@ -35,6 +35,7 @@ export default class BrunchForm {
         brunchForm.addEventListener('submit', event => {
             event.preventDefault();
             questionApi.add(elements.answer.value);
+            window.location.href = '/main.html';
         });
         return dom;
     }
