@@ -22,11 +22,10 @@ const questionApi = {
 
     getResults(){
         const scores = this.getAll();
-        const totalScore = scores.reduce((a, b) => a + b);
-        if(totalScore <= 8) {
-            console.log('hi', totalScore);
-            window.location.href = '../result-californian.html';
-        }     
+        if(scores.length) {
+            const totalScore = scores.reduce((a, b) => a + b);
+            return totalScore;     
+        }
     }
 };
 
