@@ -35,7 +35,7 @@ class SignIn {
 
         form.addEventListener('submit', event => {
             event.preventDefault();
-            
+            window.location.href = '/main.html';
             const user = {
                 name: elements.name.value,
                 origin: elements.origin.value

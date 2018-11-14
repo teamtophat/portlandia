@@ -7,13 +7,12 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     accessToken: 'pk.eyJ1IjoibWFyY3lzaWx2ZTIyNSIsImEiOiJjam9nZnVtZGowZXFuM3FscGFoNG40MXY4In0.44qNk8FQMrSxG6kXmjhYMA'
 }).addTo(mymap);
 
+
 // mapboxgl.accessToken = 'pk.eyJ1IjoibWFyY3lzaWx2ZTIyNSIsImEiOiJjam9nZnVtZGowZXFuM3FscGFoNG40MXY4In0.44qNk8FQMrSxG6kXmjhYMA';
-// const map = new mapboxgl.Map({
-// container: 'map',
-// style: 'mapbox://styles/marcysilve225/cjoggove76wsu2rpcaf2eyqcn',
-// center: [-76.500000, 39.290000],
-// zoom: 11.0
-// }).addTo(mymap); 
+// var map = new mapboxgl.Map({
+//     container: 'map',
+//     style: 'mapbox://styles/mapbox/streets-v9'
+// }); 
 
 var Icon = L.icon({
     iconUrl: 'mayor01cut.jpg',
