@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+    <link rel="stylesheet" href="css/map.css">
+    <!-- <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' /> -->
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+    crossorigin=""></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -12,17 +24,10 @@
     </header>
 
     <section>
-        <nav>
-            <a onclick="coffee-link" href="coffee-question.html">Stumptown Coffee</a>
-            <a onclick="brunch-link" href="brunch-question.html">Screen Door</a>
-            <a onclick="bookstore-link" href="bookstore-question.html">Women on Women First</a>
-            <a onclick="record-link" href="records-question.html">Everyday Music</a>
-            <a onclick="store-link" href="store-question.html">Columbia Store</a>
-            <a onclick="hiking-link" href="hiking-question.html">Mt. Tabor </a>
-
-        </nav>
+        <div id="mapid"></div>
     </section>
 
     <script type="module" src="js/main-app.js"></script>
+    <script type="module" src="js/map-display.js"></script>
 </body>
 </html>
