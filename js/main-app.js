@@ -1,7 +1,8 @@
 import html from './html.js';
 import SignIn from './sign-in.js';
 import userApi from './user-api.js';
-
+import questionApi from './question-api.js'; 
+import ResultPage from './result-page.js'; 
 
 // const user = userApi.get();
 
@@ -41,3 +42,22 @@ export default class App {
         return dom;
     }
 }
+
+function checkGame() {
+    const check = questionApi.getAll(); 
+    console.log('hello', check); 
+
+    if(check.length === 6) {
+        console.log('hi', check);
+        window.location.href = '../result.html';
+        const resultPage = new ResultPage().render();
+        const root = document.getElementById('root');      
+        root.appendChild(resultPage); 
+    }
+    else { 
+        return; 
+    } 
+}   
+
+checkGame(); 
+
