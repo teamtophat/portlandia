@@ -1,35 +1,41 @@
 import html from './html.js'; 
-import resultData from './result-dataset.js'; 
+import Portlander from './result-portlander.js'; 
 import questionApi from './question-api.js'; 
 
 function makeTemplate() {
     return html`
         <div>
-            <p id="result-name"></p>
+        <p>This is the results component</p>
+        <section id="californian"></section>
+        <section id="poser"></section>
+        <section id="portlander"></section>
         </div>
         
-        <section>
-            <p id="result-description"></p>
-        </section>
     `;
 }
 
 export default class ResultPage {
+    constructor() {
+        this.scores = questionApi.getAll();
+    }
     render() {
         let dom = makeTemplate(); 
-        const resultName = dom.querySelector('#result-name'); 
-        // const resultDescription = dom.querySelector('#result-description'); 
-
-        const totalscore = questionApi.getResults(); 
+        const totalscore = parseInt(this.scores[0]);
         if(totalscore <= 10) {
-            resultName.textContent = resultData[0].name; 
+            console.log('10 or less');
         }
         else if(totalscore >= 11 && totalscore <= 16) {
-            resultName.textContent = resultData[1].name;
+            console.log('11 to 16');
         }
         else {
-            resultName.textContent = resultData[2].name;
+            const portlanderSection = dom.getElementById('portlander'); 
+            const portlander = new Portlander();
+            portlanderSection.appendChild(portlander.render());
         }
         return dom;  
     }
 }
+const resultPage = new ResultPage();
+const root = document.getElementById('root');  
+console.log('root', document.getElementById('root'));    
+root.appendChild(resultPage.render()); 
