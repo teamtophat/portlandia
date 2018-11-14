@@ -31,13 +31,13 @@ var bookMarker = L.marker([45.541, -122.666], { icon: Icon }).addTo(mymap);
 bookMarker.bindPopup('<b>Women and Women First</b><br><a onclick="bookstore-link" href="bookstore-question.html"><img id="bookstore-pic" src="bookstore-pic.jpg"></a>'); 
 
 var recordMarker = L.marker([45.523, -122.684], { icon: Icon }).addTo(mymap);
-recordMarker.bindPopup('<b> Everyday Music</b><br><a onclick="record-link" href="records-question.html"><img id="record-pic" src="record-pic.jpg"></a> disabled="disabled"'); 
+recordMarker.bindPopup('<b> Everyday Music</b><br><a onclick="record-link" href="records-question.html"><img id="record-pic" src="record-pic.jpg"></a>'); 
 
 var brunchMarker = L.marker([45.522, -122.6416], { icon: Icon }).addTo(mymap);
-brunchMarker.bindPopup('<b> Screen Door</b><br><a onclick="brunch-link" href="brunch-question.html"><img id="brunch-pic" src="brunch.jpg"></a> disabled="disabled"'); 
+brunchMarker.bindPopup('<b> Screen Door</b><br><a onclick="brunch-link" href="brunch-question.html"><img id="brunch-pic" src="brunch.jpg"></a>'); 
 
 var storeMarker = L.marker([45.517, -122.680], { icon: Icon }).addTo(mymap);
-storeMarker.bindPopup('<b> Columbia Store</b><br><a onclick="store-link" href="store-question.html"><img id="store-pic" src="store.jpg"></a> disabled="disabled"'); 
+storeMarker.bindPopup('<b> Columbia Store</b><br><a onclick="store-link" href="store-question.html"><img id="store-pic" src="store.jpg"></a>'); 
 
 var hikingMarker = L.marker([45.517, -122.594], { icon: Icon }).addTo(mymap);
-hikingMarker.bindPopup('<b> Mount Tabor </b><br><a onclick="hiking-link" href="hiking-question.html"><img id="hiking-pic" src="hiking.jpg"></a> disabled="disabled"'); 
+hikingMarker.bindPopup('<b> Mount Tabor </b><br><a onclick="hiking-link" href="hiking-question.html"><img id="hiking-pic" src="hiking.jpg"></a>'); 
