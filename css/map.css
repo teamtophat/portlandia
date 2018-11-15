@@ -14,7 +14,8 @@ img {
 }
 header {
     text-align: center; 
-    font-family: 'Bangers', cursive;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Bungee Shade', cursive;
     font-size: 25pt; 
     text-shadow: 1pt 3pt 5pt lightblue; 
     z-index: -4;

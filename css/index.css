@@ -1,0 +1,13 @@
+img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+#root {
+    text-align: center; 
+    font-family: 'Cabin', sans-serif;
+
+}
