@@ -4,17 +4,17 @@ import checkGame from './helpers.js';
 
 function makeTemplate() {
     return html`
-<form id="coffee-form">
-    <label for="answer1">Grande Frappuccino</label>
-    <input type="radio" name="answer" id="answer1" value="1">
-    <label for="answer2">Flat White</label>
-    <input type="radio" name="answer" id="answer2" value="2">
-    <label for="answer3">Single origin 12-ounce Ecuadorian roast with pine nut milk</label>
-    <input type="radio" name="answer" id="answer3" value="3">
-    <div>
-    <button>Submit</button>
-</div>
-    </form>
+        <form id="coffee-form">
+            <label for="answer1">Grande Frappuccino</label>
+            <input type="radio" name="answer" id="answer1" value="1">
+            <label for="answer2">Flat White</label>
+            <input type="radio" name="answer" id="answer2" value="2">
+            <label for="answer3">Single origin 12-ounce Ecuadorian roast with pine nut milk.</label>
+            <input type="radio" name="answer" id="answer3" value="3">
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
     `;
 }
 

@@ -6,11 +6,11 @@ function makeTemplate() {
     return html`
         <form id="brunch-form">
             <div>
-                <label for="answer1">No! That wait is ridiculous, I’ll just make brunch at home</label>
+                <label for="answer1">No! That wait is ridiculous, I’ll just make brunch at home.</label>
                 <input type="radio" name="answer" id="answer1" value="1">
             </div>
             <div>
-                <label for="answer2">I’m gonna go find another brunch place</label>
+                <label for="answer2">I’m gonna go find another brunch place.</label>
                 <input type="radio" name="answer" id="answer2" value="2">
             </div>
             <div>
@@ -37,8 +37,6 @@ export default class BrunchForm {
             event.preventDefault();
             questionApi.add(elements.answer.value);
             checkGame();
-
-
         });
         return dom;
     }
