@@ -13,24 +13,20 @@ function makeTemplate() {
             </p>
             <button id="submit">Sign In</button>
         </form>
-
-        <section id="greeting">
-        </section>
+        <section id="greeting"></section>
     `;
 }
 
 function makeInvite(name, origin) {
     return html`
-        <p>Welcome to Portland, ${name}, we're glad to hear you escaped ${origin}. In order to become a true Portlander, there are some things that you need to know.</p>
-        <button id="start-game"> Let's take a tour </button>
+        <p>Welcome to Portland, ${name}. We're glad to hear you escaped ${origin}. In order to become a true Portlander there are some things that you need to know.</p>
+        <button id="start-game"> Let's take a tour!</button>
     `;
 }
-
 class SignIn {
     constructor(onSignIn) {
         this.onSignIn = onSignIn;
     }
-
     render() {
         const dom = makeTemplate();
         const form = dom.querySelector('form');
@@ -39,9 +35,7 @@ class SignIn {
 
         form.addEventListener('submit', event => {
             event.preventDefault();
-
             const inviteDom = makeInvite(elements.name.value, elements.origin.value);
-            
             greetingSection.appendChild(inviteDom);
             const submitButton = greetingSection.querySelector('#start-game'); 
             submitButton.addEventListener('click', event => {
@@ -52,7 +46,6 @@ class SignIn {
 
         return dom;
     }
-
 }
 
 export default SignIn;

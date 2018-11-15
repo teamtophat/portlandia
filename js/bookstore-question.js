@@ -6,17 +6,16 @@ function makeTemplate() {
     return html`
         <form id="bookstore-form">
             <div>
-            <label for="answer1">Military industrial whaaaaat??? I just wanted a book on dogs.</label>
-            <input type="radio" name="answer" id="answer1" value="1">
+                <label for="answer1">Military industrial whaaaaat??? I just wanted a book on dogs.</label>
+                <input type="radio" name="answer" id="answer1" value="1">
             </div>
             <div>
-            <label for="answer2">Is this not Powell's??</label>
-            <input type="radio" name="answer" id="answer2" value="2">
+                <label for="answer2">Is this not Powell's??</label>
+                <input type="radio" name="answer" id="answer2" value="2">
             </div>
             <div>
-            <label for="answer3">Trick question. I don’t need to read a book on that. I’m just gonna act like I know what I’m talking about 
-                </label>
-            <input type="radio" name="answer" id="answer3" value="3">
+                <label for="answer3">Trick question. I don’t need to read a book on that. I’m just gonna act like I know what I’m talking about.</label>
+                <input type="radio" name="answer" id="answer3" value="3">
             </div>
             <div>
                 <button>Submit</button>
