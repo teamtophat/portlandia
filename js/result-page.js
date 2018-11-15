@@ -7,11 +7,10 @@ import Californian from './result-californian.js';
 function makeTemplate() {
     return html`
         <div>
-        <section id="californian"></section>
-        <section id="poser"></section>
-        <section id="portlander"></section>
+            <section id="californian"></section>
+            <section id="poser"></section>
+            <section id="portlander"></section>
         </div>
-        
     `;
 }
 
@@ -20,27 +19,18 @@ export default class ResultPage {
         this.scores = questionApi.getResults();
     }
     render() {
-        console.log('got here', this.scores);
         let dom = makeTemplate(); 
         let totalscore = this.scores;
-        console.log('total score', totalscore);
+        
         if(totalscore <= 10) {
             const californianSection = dom.getElementById('californian');
             const californian = new Californian();
             californianSection.appendChild(californian.render());
-            console.log('10 or less', totalscore);
-        }
-
-        
-        else if(totalscore >= 11 && totalscore <= 16) {
-            // const totalscore = parseInt(this.scores[1]);
+        } else if(totalscore >= 11 && totalscore <= 16) {
             const poserSection = dom.getElementById('poser');
             const poser = new Poser();
             poserSection.appendChild(poser.render());
-            console.log('11 to 16', totalscore);
-        }
-        else {
-            // const totalscore = parseInt(this.scores[2]);
+        } else {
             const portlanderSection = dom.getElementById('portlander'); 
             const portlander = new Portlander();
             portlanderSection.appendChild(portlander.render());
@@ -48,7 +38,7 @@ export default class ResultPage {
         return dom;  
     }
 }
+
 const resultPage = new ResultPage();
 const root = document.getElementById('root');  
-console.log('root', document.getElementById('root'));    
 root.appendChild(resultPage.render()); 

@@ -43,5 +43,4 @@ export default class HikingForm {
 
 const app = new HikingForm().render();
 const root = document.getElementById('root');
-
 root.appendChild(app);

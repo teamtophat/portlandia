@@ -9,7 +9,6 @@ function makeTemplate() {
         </header>
         <main>
             <section class="sign-in-section"></section>
-            <section class="invite-section"></section>
         </main>
     `;
 }

@@ -23,6 +23,7 @@ function makeTemplate() {
         </form>
     `;
 }
+
 export default class BookstoreForm {
     constructor(onAdd) {
         this.onAdd = onAdd; 
@@ -43,5 +44,4 @@ export default class BookstoreForm {
 
 const app = new BookstoreForm().render(); 
 const root = document.getElementById('root'); 
-
 root.appendChild(app); 

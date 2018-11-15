@@ -5,16 +5,16 @@ function makeTemplate() {
         <div>
             <h1>True Portlander</h1>
         </div>
-        <p>We are elated to meet a fellow Portlander. 
-           We see you are wise in the ways of Kombucha,non GMo-locally sourced-farmed tempeh, 
-           and you have a keen understanding of how to be passively nice yet, aggressive. 
-           You are a Portlander, live it up.
-        
+        <p>
+            We are elated to meet a fellow Portlander. 
+            We see you are wise in the ways of Kombucha, non-GMO, locally sourced, farmed tempeh. 
+            You have a keen understanding of how to be passively nice, yet aggressive. 
+            You are a Portlander. Live it up!
+        </p>
     `;
 }
 
-export default class Portlander {
-      
+export default class Portlander { 
     render() {
         let dom = makeTemplate(); 
         
