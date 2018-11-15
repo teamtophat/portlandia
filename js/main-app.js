@@ -1,7 +1,6 @@
 import html from './html.js';
 import SignIn from './sign-in.js';
 import userApi from './user-api.js';
-import questionApi from './question-api.js'; 
 
 // const user = userApi.get();
 
@@ -37,25 +36,10 @@ export default class App {
         // const inviteSection = dom.querySelector('.invite-section');
         // const invite = new SignIn(this.userData);
         // inviteSection.appendChild(invite.showUser());
-        this.checkGame(); 
-
+       
         return dom;
     }
-    checkGame() {
-        const check = questionApi.getAll(); 
-        console.log('hello', check); 
-            
-        if(check.length === 1) {
-            console.log('hi', check);
-            window.location.href = '../result.html';
-            // const resultPage = new ResultPage().render();
-            // const root = document.getElementById('root');      
-            // root.appendChild(resultPage); 
-        }
-        else { 
-            return; 
-        } 
-    }   
+    
 }
 
 

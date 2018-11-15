@@ -1,5 +1,6 @@
 import html from './html.js'; 
 import questionApi from './question-api.js';
+import checkGame from './helpers.js';
 
 function makeTemplate() {
     return html`
@@ -35,8 +36,7 @@ export default class BookstoreForm {
         bookstoreForm.addEventListener('submit', event => {
             event.preventDefault();
             questionApi.add(elements.answer.value); 
-    
-            window.location.href = '/main.html';
+            checkGame();
         }); 
         return dom; 
     }

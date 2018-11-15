@@ -1,6 +1,8 @@
 import html from './html.js'; 
 import Portlander from './result-portlander.js'; 
 import questionApi from './question-api.js'; 
+import Poser from './result-poser.js';
+import Californian from './result-californian.js';
 
 function makeTemplate() {
     return html`
@@ -16,18 +18,30 @@ function makeTemplate() {
 
 export default class ResultPage {
     constructor() {
-        this.scores = questionApi.getAll();
+        this.scores = questionApi.getResults();
     }
     render() {
+        console.log('got here', this.scores);
         let dom = makeTemplate(); 
-        const totalscore = parseInt(this.scores[0]);
+        let totalscore = this.scores[0];
+        console.log('total score', totalscore);
         if(totalscore <= 10) {
-            console.log('10 or less');
+            const californianSection = dom.getElementById('californian');
+            const californian = new Californian();
+            californianSection.appendChild(californian.render());
+            console.log('total is', totalscore);
         }
+
+        
         else if(totalscore >= 11 && totalscore <= 16) {
+            // const totalscore = parseInt(this.scores[1]);
+            const poserSection = dom.getElementById('poser');
+            const poser = new Poser();
+            poserSection.appendChild(poser.render());
             console.log('11 to 16');
         }
         else {
+            // const totalscore = parseInt(this.scores[2]);
             const portlanderSection = dom.getElementById('portlander'); 
             const portlander = new Portlander();
             portlanderSection.appendChild(portlander.render());
