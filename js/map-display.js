@@ -8,22 +8,23 @@ const mymap = new mapboxgl.Map({
 });      
 
 var coffeeMarker = {
-    type: ' markers',
+    type: ' coffee-marker',
     features: [{
-        type: 'marker',
+        type: 'coffee-marker',
         geometry: {
             type: 'Point',
             coordinates: [-122.655, 45.5191171]
         },
         properties: {
-            description: '<b>Stumptown Coffee!</b><br><a onclick="coffee-link" href="coffee-question.html"><img id="coffee-pic" disabled="disabled" src="assets/coffee.jpg"></a>'
+            title: 'Stumptown Coffee',
+            description: '<a onclick="coffee-link" href="coffee-question.html"><img id="coffee-pic" disabled="disabled" src="assets/coffee.jpg"></a>'
         }
     }],
 };
 coffeeMarker.features.forEach(function(marker) {
 
     var el = document.createElement('div');
-    el.className = 'marker';
+    el.className = 'coffee-marker';
 
     new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
@@ -33,22 +34,23 @@ coffeeMarker.features.forEach(function(marker) {
 });
 
 var brunchMarker = {
-    type: ' markers',
+    type: 'brunch-marker',
     features: [{
-        type: 'marker',
+        type: 'brunch-marker',
         geometry: {
             type: 'Point',
             coordinates: [-122.6416, 45.522]
         },
         properties: {
-            description: '<b> Screen Door</b><br><a onclick="brunch-link" href="brunch-question.html"><img id="brunch-pic" src="assets/brunch.jpg"></a>'
+            title: 'Screen Door',
+            description: '<a onclick="brunch-link" href="brunch-question.html"><img id="brunch-pic" src="assets/brunch.jpg"></a>'
         }
     }],
 };
 brunchMarker.features.forEach(function(marker) {
 
     var el = document.createElement('div');
-    el.className = 'marker';
+    el.className = 'brunch-marker';
 
     new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
@@ -57,22 +59,23 @@ brunchMarker.features.forEach(function(marker) {
             .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
 });
 var recordMarker = {
-    type: ' markers',
+    type: ' record-marker',
     features: [{
-        type: 'marker',
+        type: 'record-marker',
         geometry: {
             type: 'Point',
             coordinates: [-122.684, 45.523]
         },
         properties: {
-            description: '<b> Everyday Music</b><br><a onclick="record-link" href="records-question.html"><img id="record-pic" src="assets/record-pic.jpg"></a>'
+            title: 'Everyday Music',
+            description: '<a onclick="record-link" href="records-question.html"><img id="record-pic" src="assets/record-pic.jpg"></a>'
         }
     }],
 };
 recordMarker.features.forEach(function(marker) {
 
     var el = document.createElement('div');
-    el.className = 'marker';
+    el.className = 'record-marker';
 
     new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
@@ -81,22 +84,23 @@ recordMarker.features.forEach(function(marker) {
             .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
 });
 var bookstoreMarker = {
-    type: ' markers',
+    type: ' book-marker',
     features: [{
-        type: 'marker',
+        type: 'bookstore-marker',
         geometry: {
             type: 'Point',
             coordinates: [-122.666, 45.541]
         },
         properties: {
-            description:'<b>Women and Women First</b><br><a onclick="bookstore-link" href="bookstore-question.html"><img id="bookstore-pic" src="assets/bookstore-pic.jpg"></a>'
+            title: 'Women and Women First',
+            description:'<a onclick="bookstore-link" href="bookstore-question.html"><img id="bookstore-pic" src="assets/bookstore-pic.jpg"></a>'
         }
     }],
 };
 bookstoreMarker.features.forEach(function(marker) {
 
     var el = document.createElement('div');
-    el.className = 'marker';
+    el.className = 'bookstore-marker';
 
     new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
@@ -105,22 +109,23 @@ bookstoreMarker.features.forEach(function(marker) {
             .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
 });
 var storeMarker = {
-    type: ' markers',
+    type: ' store-marker',
     features: [{
-        type: 'marker',
+        type: 'store-marker',
         geometry: {
             type: 'Point',
             coordinates: [-122.680, 45.517]
         },
         properties: {
-            description:'<b> Columbia Store</b><br><a onclick="store-link" href="store-question.html"><img id="store-pic" src="assets/store.jpg"></a>'
+            title: 'Columbia Store',
+            description:'<a onclick="store-link" href="store-question.html"><img id="store-pic" src="assets/store.jpg"></a>'
         }
     }],
 };
 storeMarker.features.forEach(function(marker) {
 
     var el = document.createElement('div');
-    el.className = 'marker';
+    el.className = 'store-marker';
 
     new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
@@ -140,22 +145,23 @@ bookstoreMarker.features.forEach(function(marker) {
             .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
 });
 var hikingMarker = {
-    type: ' markers',
+    type: ' hiking-marker',
     features: [{
-        type: 'marker',
+        type: 'hiking-marker',
         geometry: {
             type: 'Point',
             coordinates: [-122.594, 45.517]
         },
         properties: {
-            description:'<b> Mount Tabor </b><br><a onclick="hiking-link" href="hiking-question.html"><img id="hiking-pic" src="assets/hiking.jpg"></a>'
+            title:'Mount Tabor',
+            description:'<a onclick="hiking-link" href="hiking-question.html"><img id="hiking-pic" src="assets/hiking.jpg"></a>'
         }
     }],
 };
 hikingMarker.features.forEach(function(marker) {
 
     var el = document.createElement('div');
-    el.className = 'marker';
+    el.className = 'hiking-marker';
 
     new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
