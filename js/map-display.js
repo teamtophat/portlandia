@@ -7,17 +7,6 @@ const mymap = new mapboxgl.Map({
     zoom: 10
 });      
 
-
-var Icon = L.icon({
-    iconUrl: 'mayor01cut.jpg',
-
-    iconSize:     [38, 95], // size of the icon
-    shadowSize:   [50, 64], // size of the shadow
-    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    shadowAnchor: [4, 62],  // the same for the shadow
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
-
 var coffeeMarker = {
     type: ' markers',
     features: [{
@@ -174,3 +163,4 @@ hikingMarker.features.forEach(function(marker) {
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
             .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
 });
+

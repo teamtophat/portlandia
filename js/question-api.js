@@ -1,10 +1,8 @@
-
 let questionAnswers = []; 
 
 function saveQuestions() {
     localStorage.setItem('questionAnswers', JSON.stringify(questionAnswers)); 
 }
-
 
 const questionApi = {
     getAll() {
@@ -19,7 +17,6 @@ const questionApi = {
         questionAnswers.push(parseInt(answerValue)); 
         saveQuestions(); 
     },
-
     getResults(){
         const scores = this.getAll();
         if(scores.length) {
@@ -29,5 +26,4 @@ const questionApi = {
     }
 };
 
-
-export default questionApi; 
+export default questionApi;

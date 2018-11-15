@@ -2,8 +2,6 @@ import html from './html.js';
 import questionApi from './question-api.js';
 import checkGame from './helpers.js';
 
-// import questionApi from './question-api.js';
-
 function makeTemplate() {
     return html`
         <form id="store-form">
@@ -12,7 +10,7 @@ function makeTemplate() {
                 <input type="radio" name="answer" id="answer1" value="1">
             </div>
             <div>
-                <label for="answer2">Lightly perforated rain jacket</label>
+                <label for="answer2">Lightly perforated rain jacket.</label>
                 <input type="radio" name="answer" id="answer2" value="2">
             </div>
             <div>
@@ -24,8 +22,7 @@ function makeTemplate() {
             </div>
         </form>
     `;
-}      
-
+}
 export default class StoreForm {
     constructor(onAdd) {
         this.onAdd = onAdd;
@@ -39,13 +36,12 @@ export default class StoreForm {
             event.preventDefault();
             questionApi.add(elements.answer.value);
             checkGame(); 
-            // window.location.href = '/main.html';
         });
+
         return dom;
     }
 }
 
 const app = new StoreForm().render();
 const root = document.getElementById('root');
-
 root.appendChild(app);
