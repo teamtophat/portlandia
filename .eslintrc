@@ -12,7 +12,8 @@
         "es6": true
     },
     "globals":{
-        "L": false
+        "L": false,
+        "mapboxgl":false
     },
     "rules": {
         "eqeqeq": [

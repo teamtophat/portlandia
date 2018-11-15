@@ -1,0 +1,14 @@
+#bookstore-header {
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 15pt;
+    background-color: #eca542; 
+    border: 1px solid rgb(231, 231, 96); 
+    box-shadow: 10px 10px #d95500;
+}
+#bookstore-form {
+    text-align: center; 
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 20pt;
+    padding: 20pt; 
+}
