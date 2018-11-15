@@ -1,4 +1,4 @@
-.marcy-bio {
+.marcy-bio, {
     background: #eeeeee;
     padding: 85px 0;
     overflow: hidden;
@@ -27,4 +27,17 @@ img{
         border-bottom-right-radius: 50%;
         border-top-right-radius: 50%;
         border-top-left-radius: 50%;
+}
+
+h1{
+    font-family: 'Bangers', cursive;
+    font-size: 80px;
+}
+
+h4{
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+p{
+    font-family:'Pavanam', sans-serif;
 }
