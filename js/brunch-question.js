@@ -6,7 +6,7 @@ function makeTemplate() {
     return html`
         <form id="brunch-form">
             <div>
-                <label for="answer1">No! That wait is ridiculous, I’ll just make brunch at home.</label>
+                <label for="answer1">No! That wait is ridiculous! I’ll just make brunch at home.</label>
                 <input type="radio" name="answer" id="answer1" value="1">
             </div>
             <div>
