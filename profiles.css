@@ -1,5 +1,5 @@
-.marcy-wrapper, .heather-wrapper, .dee-wrapper {
-    background: #558e6e;
+.marcy-wrapper, .heather-wrapper, .dee-wrapper, .abel-wrapper {
+    background: #d9570088;
     padding: 30px 0px;
     overflow: hidden;
     color: white;
@@ -9,11 +9,14 @@
     margin: 12px;
 }
 
-.marcy-img{
+.marcy-img, .dee-image{
     display: flex;
     flex-direction: column;
+    margin-left: 12px;
 
 }
+
+
 
 .marcy-text, .heather-text, .dee-text{
     display: flex;
@@ -27,9 +30,6 @@
     width: 50%;
 }
 
-div {
-    display: block;
-}
 
 * {
     -moz-box-sizing: border-box;
@@ -44,6 +44,7 @@ img{
         border-bottom-right-radius: 50%;
         border-top-right-radius: 50%;
         border-top-left-radius: 50%;
+        border: 4px solid #558e6e;
 }
 
 h1{
@@ -51,7 +52,7 @@ h1{
     font-size: 80px;
 }
 
-h4{
+h2{
     font-family: 'Ropa Sans', sans-serif;
 }
 
