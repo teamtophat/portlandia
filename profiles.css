@@ -1,8 +1,25 @@
-.marcy-bio, {
-    background: #eeeeee;
-    padding: 85px 0;
+.marcy-wrapper, .heather-wrapper, .dee-wrapper {
+    background: #558e6e;
+    padding: 30px 0px;
     overflow: hidden;
-    color: #84817c;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 12px;
+}
+
+.marcy-img{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.marcy-text, .heather-text, .dee-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    justify-content: center;
 }
 
 .left, .right {
@@ -40,4 +57,12 @@ h4{
 
 p{
     font-family:'Pavanam', sans-serif;
+}
+
+header{
+    text-align: center;
+    color: rgb(247, 247, 91);
+    text-shadow: 1pt 10pt 5pt grey;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
 }
