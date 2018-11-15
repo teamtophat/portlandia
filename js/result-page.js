@@ -7,7 +7,6 @@ import Californian from './result-californian.js';
 function makeTemplate() {
     return html`
         <div>
-        <p>This is the results component</p>
         <section id="californian"></section>
         <section id="poser"></section>
         <section id="portlander"></section>
