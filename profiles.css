@@ -1,0 +1,30 @@
+.marcy-bio {
+    background: #eeeeee;
+    padding: 85px 0;
+    overflow: hidden;
+    color: #84817c;
+}
+
+.left, .right {
+    float: left;
+    width: 50%;
+}
+
+div {
+    display: block;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img{
+        width: 300px;
+        height: 300px;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+}
