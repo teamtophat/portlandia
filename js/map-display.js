@@ -16,7 +16,7 @@ var coffeeMarker = {
             coordinates: [-122.655, 45.5191171]
         },
         properties: {
-            description: '<b>Stumptown Coffee!</b><br><a onclick="coffee-link" href="coffee-question.html"><img id="coffee-pic" disabled="disabled" src="coffee.jpg"></a>'
+            description: '<b>Stumptown Coffee!</b><br><a onclick="coffee-link" href="coffee-question.html"><img id="coffee-pic" disabled="disabled" src="assets/coffee.jpg"></a>'
         }
     }],
 };
@@ -41,7 +41,7 @@ var brunchMarker = {
             coordinates: [-122.6416, 45.522]
         },
         properties: {
-            description: '<b> Screen Door</b><br><a onclick="brunch-link" href="brunch-question.html"><img id="brunch-pic" src="brunch.jpg"></a>'
+            description: '<b> Screen Door</b><br><a onclick="brunch-link" href="brunch-question.html"><img id="brunch-pic" src="assets/brunch.jpg"></a>'
         }
     }],
 };
@@ -65,7 +65,7 @@ var recordMarker = {
             coordinates: [-122.684, 45.523]
         },
         properties: {
-            description: '<b> Everyday Music</b><br><a onclick="record-link" href="records-question.html"><img id="record-pic" src="record-pic.jpg"></a>'
+            description: '<b> Everyday Music</b><br><a onclick="record-link" href="records-question.html"><img id="record-pic" src="assets/record-pic.jpg"></a>'
         }
     }],
 };
@@ -89,7 +89,7 @@ var bookstoreMarker = {
             coordinates: [-122.666, 45.541]
         },
         properties: {
-            description:'<b>Women and Women First</b><br><a onclick="bookstore-link" href="bookstore-question.html"><img id="bookstore-pic" src="bookstore-pic.jpg"></a>'
+            description:'<b>Women and Women First</b><br><a onclick="bookstore-link" href="bookstore-question.html"><img id="bookstore-pic" src="assets/bookstore-pic.jpg"></a>'
         }
     }],
 };
@@ -113,7 +113,7 @@ var storeMarker = {
             coordinates: [-122.680, 45.517]
         },
         properties: {
-            description:'<b> Columbia Store</b><br><a onclick="store-link" href="store-question.html"><img id="store-pic" src="store.jpg"></a>'
+            description:'<b> Columbia Store</b><br><a onclick="store-link" href="store-question.html"><img id="store-pic" src="assets/store.jpg"></a>'
         }
     }],
 };
@@ -148,7 +148,7 @@ var hikingMarker = {
             coordinates: [-122.594, 45.517]
         },
         properties: {
-            description:'<b> Mount Tabor </b><br><a onclick="hiking-link" href="hiking-question.html"><img id="hiking-pic" src="hiking.jpg"></a>'
+            description:'<b> Mount Tabor </b><br><a onclick="hiking-link" href="hiking-question.html"><img id="hiking-pic" src="assets/hiking.jpg"></a>'
         }
     }],
 };

@@ -27,7 +27,7 @@ body {
     opacity: 0.9;
 }
 .marker {
-    background-image: url('../mayor01cut.jpg');
+    background-image: url('/assets/mayor01cut.jpg');
     background-size: cover;
     width: 50px;
     height: 100px;
