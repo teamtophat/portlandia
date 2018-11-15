@@ -11,17 +11,20 @@ function makeTemplate() {
                 <label for="city-origin">City/State:</label>
                 <input name="origin"  id="user-origin" placeholder="City or state" required>
             </p>
-            <button id="submit">Play</button>
+            <button id="submit">Sign In</button>
         </form>
+
+        <section id="greeting">
+        </section>
     `;
 }
 
-// function makeInvite(user) {
-//     console.log(user);
-//     return html`
-//         <p class="invite-section">Welcome to Portland ${user.name}, we're glad you escaped ${user.origin}. Just because you're here, doesn't mean you are a real Portlander. Take this quiz and see how you fare.
-//     `;
-// }
+function makeInvite(name, origin) {
+    return html`
+        <p>Welcome to Portland, ${name}, we're glad you escaped ${origin}. In order to become a true Portlander, there are some things that you need to know.</p>
+        <button id="start-game"> Let's take a tour </button>
+    `;
+}
 
 class SignIn {
     constructor(onSignIn) {
@@ -31,34 +34,26 @@ class SignIn {
     render() {
         const dom = makeTemplate();
         const form = dom.querySelector('form');
+        const greetingSection = dom.getElementById('greeting');
         const elements = form.elements;
 
         form.addEventListener('submit', event => {
             event.preventDefault();
-            window.location.href = '/main.html';
-            const user = {
-                name: elements.name.value,
-                origin: elements.origin.value
-            };
-            this.onSignIn(user);
-        
+
+            const inviteDom = makeInvite(elements.name.value, elements.origin.value);
+            
+            greetingSection.appendChild(inviteDom);
+            const submitButton = greetingSection.querySelector('#start-game'); 
+            submitButton.addEventListener('click', event => {
+                console.log('got here'); 
+                event.preventDefault();
+                window.location.href = '/main.html';
+            }); 
         });
 
         return dom;
     }
 
-    // showUser() {
-    //     const dom = makeInvite();
-        // const inviteSection = dom.querySelector('.invite-section');
-        // const elements = p.elements;
-        // inviteSection.appendChild(signIn.render());
-
-        // const invite = new Invite(function(user) {
-        //     userApi.add(user);
-        // });
-
-    //     return dom; 
-    // }
 }
 
 export default SignIn;
