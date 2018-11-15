@@ -16,7 +16,7 @@ const questionApi = {
     },
     add(answerValue) {
         this.getAll(); 
-        questionAnswers.push(answerValue); 
+        questionAnswers.push(parseInt(answerValue)); 
         saveQuestions(); 
     },
 
