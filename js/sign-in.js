@@ -21,7 +21,7 @@ function makeTemplate() {
 
 function makeInvite(name, origin) {
     return html`
-        <p>Welcome to Portland, ${name}, we're glad you escaped ${origin}. In order to become a true Portlander, there are some things that you need to know.</p>
+        <p>Welcome to Portland, ${name}, we're glad to hear you escaped ${origin}. In order to become a true Portlander, there are some things that you need to know.</p>
         <button id="start-game"> Let's take a tour </button>
     `;
 }
@@ -45,7 +45,6 @@ class SignIn {
             greetingSection.appendChild(inviteDom);
             const submitButton = greetingSection.querySelector('#start-game'); 
             submitButton.addEventListener('click', event => {
-                console.log('got here'); 
                 event.preventDefault();
                 window.location.href = '/main.html';
             }); 

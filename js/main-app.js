@@ -7,11 +7,10 @@ import userApi from './user-api.js';
 function makeTemplate() {
     return html`
         <header>
-            Welcome to Portland, it looks like you just moved here. Let's see how much you know about Portland.<br>
-            Are you a Portlander or a poser?</header>
+            Welcome to Portland. The 90's dream, where young people come to retire, let's see how well you fit in!<br>
+        </header>
         <main>
             <section class="sign-in-section">
-                <h2>Sign In<h2>
             </section>
             <section class="invite-section"></section>
         </main>
