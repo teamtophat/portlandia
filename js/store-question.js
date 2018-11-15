@@ -1,5 +1,6 @@
 import html from './html.js';
 import questionApi from './question-api.js';
+import checkGame from './helpers.js';
 
 // import questionApi from './question-api.js';
 
@@ -37,7 +38,8 @@ export default class StoreForm {
         storeForm.addEventListener('submit', event => {
             event.preventDefault();
             questionApi.add(elements.answer.value);
-            window.location.href = '/main.html';
+            checkGame(); 
+            // window.location.href = '/main.html';
         });
         return dom;
     }

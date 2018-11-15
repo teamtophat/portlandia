@@ -1,6 +1,6 @@
 import html from './html.js';
 import questionApi from './question-api.js';
-
+import checkGame from './helpers.js'; 
 
 function makeTemplate() {
     return html`
@@ -30,7 +30,8 @@ export default class CoffeeForm {
         coffeeForm.addEventListener('submit', event => {
             event.preventDefault();
             questionApi.add(elements.answer.value);
-            window.location.href = '/main.html';
+            checkGame();
+            // window.location.href = '/main.html';
         });
         return dom;
     }
