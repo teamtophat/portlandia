@@ -23,13 +23,13 @@ export default class ResultPage {
     render() {
         console.log('got here', this.scores);
         let dom = makeTemplate(); 
-        let totalscore = this.scores[0];
+        let totalscore = this.scores;
         console.log('total score', totalscore);
         if(totalscore <= 10) {
             const californianSection = dom.getElementById('californian');
             const californian = new Californian();
             californianSection.appendChild(californian.render());
-            console.log('total is', totalscore);
+            console.log('10 or less', totalscore);
         }
 
         
@@ -38,7 +38,7 @@ export default class ResultPage {
             const poserSection = dom.getElementById('poser');
             const poser = new Poser();
             poserSection.appendChild(poser.render());
-            console.log('11 to 16');
+            console.log('11 to 16', totalscore);
         }
         else {
             // const totalscore = parseInt(this.scores[2]);
