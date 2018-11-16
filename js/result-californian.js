@@ -2,10 +2,10 @@ import html from './html.js';
 
 function makeTemplate() {
     return html`
-        <div>
+        <div class="result-statement">
             <h1>Californian</h1>
         </div>
-        <p>
+        <p class="result-description">
             You are a Californian. Even if you’re not, you probably belong there. 
             Nonetheless we hope you enjoyed your tour of Portland. 
             You’re just too mainstream to be a considered a full fledged Portlander. 
