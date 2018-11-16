@@ -5,18 +5,19 @@ import checkGame from './helpers.js';
 function makeTemplate() {
     return html`
         <img class="question-image" src="../assets/stumptown.jpg" alt="stumptown-coffee"/>  
-        <form id="coffee-form">
-            <div>
-                <label for="answer1">Grande Frappuccino.</label>
+        <div class="question">What would you like to drink?</div>
+        <form id="coffee-form" class="answers-form">
+            <div class="answer">
                 <input type="radio" name="answer" id="answer1" value="1">
+                <label for="answer1">Grande Frappuccino.</label>
             </div>
-            <div>
-                <label for="answer2">Flat White.</label>
+            <div class="answer">
                 <input type="radio" name="answer" id="answer2" value="2">
+                <label for="answer2">Flat White.</label>
             </div>
-            <div>
-                <label for="answer3">Single origin 12-ounce Ecuadorian roast with pine nut milk.</label>
+            <div class="answer">
                 <input type="radio" name="answer" id="answer3" value="3">
+                <label for="answer3">Single origin 12-ounce Ecuadorian roast with pine nut milk.</label>
             </div>
             <div>
                 <button>Submit</button>

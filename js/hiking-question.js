@@ -4,18 +4,20 @@ import checkGame from './helpers.js';
 
 function makeTemplate() {
     return html`
-    <form id="hiking-form">
-        <div>
-            <label for="answer1">I'm a member of a climbing gym.</label>
+    <img class="question-image" src="../assets/mount-tabor.jpg" alt="mount-tabor"/>
+    <div class="question">Hiking is a very taxing activity! Portlanders tend to be very fit. What form of exercise do you prefer?</div>
+    <form id="hiking-form" class="answers-form">
+        <div class="answer">
             <input type="radio" name="answer" id="answer1" value="1">
+            <label for="answer1">I'm a member of a climbing gym.</label>
         </div>
-        <div>
-            <label for="answer2">I do CrossFit and I’m vegan, yaaaa so I'm pretty fit!</label>
+        <div class="answer">
             <input type="radio" name="answer" id="answer2" value="2">
+            <label for="answer2">I do CrossFit and I’m vegan, yaaaa so I'm pretty fit!</label>
         </div>
-        <div>
-            <label for="answer3">Yaaaa, I do Vinyasa power yoga to align my chakras.</label>
+        <div class="answer">
             <input type="radio" name="answer" id="answer3" value="3">
+            <label for="answer3">Yaaaa, I do Vinyasa power yoga to align my chakras.</label>
         </div>
         <div>
             <button>Submit</button>

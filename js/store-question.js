@@ -4,18 +4,20 @@ import checkGame from './helpers.js';
 
 function makeTemplate() {
     return html`
-        <form id="store-form">
+        <img class="question-image" src="../assets/columbia.jpg" alt="columbia-store"/>
+         <div class="question">It looks like it’ll start raining soon. What gear are you looking for?</div>
+        <form id="store-form" class="answers-form">
             <div class="answer">
-                <label for="answer1">I would like an umbrella made of recycled plastic.</label>
                 <input type="radio" name="answer" id="answer1" value="1">
+                <label for="answer1">I would like an umbrella made of recycled plastic.</label>
             </div>
             <div class="answer">
-                <label for="answer2">Lightly perforated rain jacket.</label>
                 <input type="radio" name="answer" id="answer2" value="2">
+                <label for="answer2">Lightly perforated rain jacket.</label>
             </div>
             <div class="answer">
-                <label for="answer3">Nah, I’m good. I don’t need anything. A little rain never hurt anybody!</label>
                 <input type="radio" name="answer" id="answer3" value="3">
+                <label for="answer3">Nah, I’m good. I don’t need anything. A little rain never hurt anybody!</label>
             </div>
             <div>
                 <button>Submit</button>
