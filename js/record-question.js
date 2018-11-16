@@ -4,6 +4,7 @@ import checkGame from './helpers.js';
 
 function makeTemplate() {
     return html`
+    <section class="content">
         <img class="question-image" src="../assets/record-store.jpg" alt="everyday-music"/>
         <div class="question">What genre of music do you listen to?</div>
         <form id="record-form" class="answers-form">
@@ -19,10 +20,11 @@ function makeTemplate() {
                 <input type="radio" name="answer" id="answer3" value="3">
                 <label for="answer3">I actually make my own music. My band practices out of my friend’s garage.</label>
             </div>
-            <div>
+            <div class="question-button">
                 <button>Submit</button>
             </div>
         </form>
+    </section>
     `; 
 }
 export default class RecordForm {

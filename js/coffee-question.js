@@ -4,6 +4,7 @@ import checkGame from './helpers.js';
 
 function makeTemplate() {
     return html`
+    <section class="content">
         <img class="question-image" src="../assets/stumptown.jpg" alt="stumptown-coffee"/>  
         <div class="question">What would you like to drink?</div>
         <form id="coffee-form" class="answers-form">
@@ -19,10 +20,11 @@ function makeTemplate() {
                 <input type="radio" name="answer" id="answer3" value="3">
                 <label for="answer3">Single origin 12-ounce Ecuadorian roast with pine nut milk.</label>
             </div>
-            <div>
+            <div class="question-button">
                 <button>Submit</button>
             </div>
         </form>
+    </section>
     `;
 }
 
