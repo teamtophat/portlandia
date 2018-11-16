@@ -11,6 +11,8 @@ function makeTemplate() {
             <section id="poser"></section>
             <section id="portlander"></section>
         </div>
+        <button id="play-again">Play Again!</button>
+        <a href="profile.html">About Us </a>
     `;
 }
 
@@ -35,6 +37,11 @@ export default class ResultPage {
             const portlander = new Portlander();
             portlanderSection.appendChild(portlander.render());
         }
+        const form = dom.getElementById('play-again');
+
+        form.addEventListener('click', () => {
+            window.location.href = ('https://www.youtube.com/watch?v=dQw4w9WgXcQ'); 
+        });
         return dom;  
     }
 }
