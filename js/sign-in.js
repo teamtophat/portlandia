@@ -4,11 +4,11 @@ function makeTemplate() {
     return html`
         <form class="sign-in">
             <p>
-                <label for="name">Name:</label>
+                <label for="name" class="input-direction">Name:</label>
                 <input name="name" id="user-name" placeholder="Please type name" required> 
             </p>  
-            <p> Where did you move here from?</p>
-                <label for="city-origin">City/State:</label>
+            <p id="narrow" class="input-direction"> Where did you move here from?</p>
+                <label for="city-origin" class="input-direction">City/State:</label>
                 <input name="origin"  id="user-origin" placeholder="City or state" required>
             </p>
             <button id="submit">Sign In</button>
@@ -19,7 +19,7 @@ function makeTemplate() {
 
 function makeInvite(name, origin) {
     return html`
-        <p>Welcome to Portland, ${name}. We're glad to hear you escaped ${origin}. In order to become a true Portlander there are some things that you need to know.</p>
+        <p id="narrow" class="input-direction">Welcome to Portland, ${name}. We're glad to hear you escaped ${origin}. In order to become a true Portlander there are some things that you need to know.</p>
         <button id="start-game"> Let's take a tour!</button>
     `;
 }
