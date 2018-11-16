@@ -4,7 +4,7 @@ const mymap = new mapboxgl.Map({
     container: 'mapid',
     style: 'mapbox://styles/marcysilve225/cjoggove76wsu2rpcaf2eyqcn',
     center: [-122.6587, 45.5122],
-    zoom: 10
+    zoom: 11.5
 });      
 
 const coffeeMarker = {
@@ -13,7 +13,7 @@ const coffeeMarker = {
         type: 'coffee-marker',
         geometry: {
             type: 'Point',
-            coordinates: [-122.655, 45.5191171]
+            coordinates: [-122.663, 45.512]
         },
         properties: {
             title: 'Stumptown Coffee',
