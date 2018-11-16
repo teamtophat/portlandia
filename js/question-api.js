@@ -17,12 +17,15 @@ const questionApi = {
         questionAnswers.push(parseInt(answerValue)); 
         saveQuestions(); 
     },
-    getResults(){
+    getResults() {
         const scores = this.getAll();
         if(scores.length) {
             const totalScore = scores.reduce((a, b) => a + b);
             return totalScore;     
         }
+    },
+    reset() {
+        localStorage.removeItem('questionAnswers'); 
     }
 };
 

@@ -40,7 +40,8 @@ export default class ResultPage {
         const form = dom.getElementById('play-again');
 
         form.addEventListener('click', () => {
-            window.location.href = ('https://www.youtube.com/watch?v=dQw4w9WgXcQ'); 
+            questionApi.reset(); 
+            window.location = './index.html'; 
         });
         return dom;  
     }
