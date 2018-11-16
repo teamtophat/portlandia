@@ -11,7 +11,7 @@ function makeTemplate() {
             and you probably buy from Whole Foods rather than the Farmers Markets. 
             In order to fulfill your prophecy in this city, we suggest you go to hip 
             coffee shops on the East Side, drink out of Mason jars, and invest the best 
-            90\'s fixie bike. Good Luck!
+            90's fixie bike. Good Luck!
         </p>
     `;
 }
