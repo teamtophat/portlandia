@@ -32,3 +32,19 @@
 .video-image {
     align-content: center;
 }
+
+.giphy-embed {
+    margin: auto;
+    display: block;
+    padding-top: 20px;
+    border: 5px solid #2E2832;
+
+}
+
+.video-link {
+    font-family: 'Pavanam', sans-serif;
+    color: #D65619;
+    font-size: 20px;
+    text-decoration: none;
+}
+
