@@ -1,3 +1,7 @@
+body {
+    background-color: #7FC5BB;
+}
+
 .question-header {
     text-align: center;
     font-family: 'Bangers', cursive;
@@ -5,48 +9,95 @@
     background-color: #eca542; 
     border: 1px solid rgb(231, 231, 96); 
     box-shadow: 10px 10px #d95500;
-    margin: 40px;
+    margin: 20px 200px 40px 200px;
+    padding: 20px;
 }
+
 .question {
     font-family: 'Ropa Sans', sans-serif;
-    font-size:20px;
+    font-size: 25px;
     text-align: center;
-    margin: 20px 50px;
-    padding:
+    margin: 25px 150px 15px 150px;
 }
+
 .answers-form { 
-    text-align: left; 
+    /* margin: block-center; */
     font-family: 'Pavanam', sans-serif;
-    font-size: 15pt;
+    font-size: 20px;
     padding: 5px; 
 }
+
 .answer {
     padding: 5px;
-    /* margin: 15px 50px; */
+    margin: 15px 50px;
 }
+
+.answer input {
+    float: left;
+}
+
+.answer label {
+    margin-left: 30px;
+    display: block;
+}
+
 .question-image {
     width: 600px;
     height: auto;
     display: block;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
 .question-button {
-    padding:20px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 20px;
+    background-color: rgb(231, 231, 96);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#answer-bullets {
+    margin: 0 auto;
+    width: 500px;
 }
 
 @media screen and (max-width: 600px) {
-.content {
-	width: 80%;
-	padding: 1%;
-	background-color: #eca542;
+    .content {
+        width: 80%;
+        padding: 1%;
+        background-color: #eca542;
+        padding: 15px;
+        margin: 20px auto;
     }
-.question-image {
-    width: 100%;
-    background-color: #eca542;
+
+    .question-header {
+        align-items: left;
+        width: 80%;
+        margin: 20px auto;
     }
-.question-header {
-    align-items: left;
-    width:80%;
+
+    .question-image {
+        width: 100%;
+        background-color: #eca542;
+        align-content: center;
+    }
+
+    .question {
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    #answer-bullets {
+        margin: left;
+        width: 100%;
     }
 }

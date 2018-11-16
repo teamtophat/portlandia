@@ -7,23 +7,25 @@ function makeTemplate() {
     <section class="content">
         <img class="question-image" src="../assets/record-store.jpg" alt="everyday-music"/>
         <div class="question">What genre of music do you listen to?</div>
-        <form id="record-form" class="answers-form">
-            <div class="answer">
-                <input type="radio" name="answer" id="answer1" value="1">
-                <label for="answer1">I'm just here to look. I buy all of my music on iTunes.</label>
-            </div>
-            <div class="answer">
-                <input type="radio" name="answer" id="answer2" value="2">
-                <label for="answer2">I'm looking for an indie chillwave band that's not mainstream yet.</label>
-            </div>
-            <div class="answer">
-                <input type="radio" name="answer" id="answer3" value="3">
-                <label for="answer3">I actually make my own music. My band practices out of my friend’s garage.</label>
-            </div>
-            <div class="question-button">
-                <button>Submit</button>
-            </div>
-        </form>
+        <div id="answer-bullets">
+            <form id="record-form" class="answers-form">
+                <div class="answer">
+                    <input type="radio" name="answer" id="answer1" value="1">
+                    <label for="answer1">I'm just here to look. I buy all of my music on iTunes.</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="answer" id="answer2" value="2">
+                    <label for="answer2">I'm looking for an indie chillwave band that's not mainstream yet.</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="answer" id="answer3" value="3">
+                    <label for="answer3">I actually make my own music. My band practices out of my friend’s garage.</label>
+                </div>
+                <div>
+                    <button class="question-button">Submit</button>
+                </div>
+            </form>
+        </div>
     </section>
     `; 
 }
