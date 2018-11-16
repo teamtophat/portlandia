@@ -10,23 +10,25 @@ function makeTemplate() {
             I see you need a book for your course in neoliberal ideology that intersects with the military industrial complex. 
             Instead of pointing, can you demonstrate with your eyes what you're looking for?
         </div>
-        <form id="bookstore-form" class="answers-form">
-            <div class="answer">
-                <input type="radio" name="answer" id="answer1" value="1">
-                <label for="answer1">Military industrial whaaaaat??? I just wanted a book on dogs.</label>
-            </div>
-            <div class="answer">
-                <input type="radio" name="answer" id="answer2" value="2">
-                <label for="answer2">Is this not Powell's??</label>
-            </div>
-            <div class="answer">
-                <input type="radio" name="answer" id="answer3" value="3">
-                <label for="answer3">Trick question. I don’t need to read a book on that. I’m just gonna act like I know what I’m talking about.</label>
-            </div>
-            <div class="question-button">
-                <button>Submit</button>
-            </div>
-        </form>
+        <div id="answer-bullets">
+            <form id="bookstore-form" class="answers-form">
+                <div class="answer">
+                    <input type="radio" name="answer" id="answer1" value="1">
+                    <label for="answer1">Military industrial whaaaaat??? I just wanted a book on dogs.</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="answer" id="answer2" value="2">
+                    <label for="answer2">Is this not Powell's??</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="answer" id="answer3" value="3">
+                    <label for="answer3">Trick question. I don’t need to read a book on that. I’m just gonna act like I know what I’m talking about.</label>
+                </div>
+                <div>
+                    <button class="question-button">Submit</button>
+                </div>
+            </form>
+        </div>
     </section>
     `;
 }
