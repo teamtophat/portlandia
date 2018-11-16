@@ -14,12 +14,12 @@ function makeTemplate() {
                     <label for="answer1">I'm a member of a climbing gym.</label>
                 </div>
                 <div class="answer">
-                    <input type="radio" name="answer" id="answer2" value="2">
-                    <label for="answer2">I do CrossFit and I’m vegan, yaaaa so I'm pretty fit!</label>
-                </div>
-                <div class="answer">
                     <input type="radio" name="answer" id="answer3" value="3">
                     <label for="answer3">Yaaaa, I do Vinyasa power yoga to align my chakras.</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="answer" id="answer2" value="2">
+                    <label for="answer2">I do CrossFit and I’m vegan, yaaaa so I'm pretty fit!</label>
                 </div>
                 <div>
                     <button class="question-button">Submit</button>

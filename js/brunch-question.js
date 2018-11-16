@@ -12,16 +12,16 @@ function makeTemplate() {
         <div id="answer-bullets">
             <form id="brunch-form" class="answers-form">
                 <div class="answer">
+                    <input type="radio" name="answer" id="answer3" value="3">
+                    <label for="answer3">Of course! Brunch is the highlight of my weekend! How else am I gonna post it on my IG???</label>
+                </div>
+                <div class="answer">
                     <input type="radio" name="answer" id="answer1" value="1">
                     <label for="answer1">No! That wait is ridiculous! I’ll just make brunch at home.</label>
                 </div>
                 <div class="answer">
                     <input type="radio" name="answer" id="answer2" value="2">
                     <label for="answer2">I’m gonna go find another brunch place.</label>
-                </div>
-                <div class="answer">
-                    <input type="radio" name="answer" id="answer3" value="3">
-                    <label for="answer3">Of course! Brunch is the highlight of my weekend! How else am I gonna post it on my IG???</label>
                 </div>
                 <div>
                     <button class="question-button">Submit</button>

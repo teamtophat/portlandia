@@ -13,12 +13,12 @@ function makeTemplate() {
         <div id="answer-bullets">
             <form id="bookstore-form" class="answers-form">
                 <div class="answer">
-                    <input type="radio" name="answer" id="answer1" value="1">
-                    <label for="answer1">Military industrial whaaaaat??? I just wanted a book on dogs.</label>
-                </div>
-                <div class="answer">
                     <input type="radio" name="answer" id="answer2" value="2">
                     <label for="answer2">Is this not Powell's??</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="answer" id="answer1" value="1">
+                    <label for="answer1">Military industrial whaaaaat??? I just wanted a book on dogs.</label>
                 </div>
                 <div class="answer">
                     <input type="radio" name="answer" id="answer3" value="3">
