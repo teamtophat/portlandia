@@ -10,13 +10,15 @@
 .question {
     font-family: 'Ropa Sans', sans-serif;
     font-size:20px;
-    margin: 20px 30px;
+    text-align: center;
+    margin: 20px 50px;
+    padding:
 }
 .answers-form { 
     text-align: left; 
     font-family: 'Pavanam', sans-serif;
     font-size: 15pt;
-    padding: 15pt; 
+    padding: 5px; 
 }
 .answer {
     padding: 5px;
@@ -26,4 +28,25 @@
     width: 600px;
     height: auto;
     display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
+.question-button {
+    padding:20px;
+}
+
+@media screen and (max-width: 600px) {
+.content {
+	width: 80%;
+	padding: 1%;
+	background-color: #eca542;
+    }
+.question-image {
+    width: 100%;
+    background-color: #eca542;
+    }
+.question-header {
+    align-items: left;
+    width:80%;
+    }
 }

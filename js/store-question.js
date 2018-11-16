@@ -4,6 +4,7 @@ import checkGame from './helpers.js';
 
 function makeTemplate() {
     return html`
+    <section class="content">
         <img class="question-image" src="../assets/columbia.jpg" alt="columbia-store"/>
          <div class="question">It looks like it’ll start raining soon. What gear are you looking for?</div>
         <form id="store-form" class="answers-form">
@@ -19,10 +20,11 @@ function makeTemplate() {
                 <input type="radio" name="answer" id="answer3" value="3">
                 <label for="answer3">Nah, I’m good. I don’t need anything. A little rain never hurt anybody!</label>
             </div>
-            <div>
+            <div class="question-button">
                 <button>Submit</button>
             </div>
         </form>
+    </section>
     `;
 }
 export default class StoreForm {

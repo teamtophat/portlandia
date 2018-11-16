@@ -4,6 +4,7 @@ import checkGame from './helpers.js';
 
 function makeTemplate() {
     return html`
+    <section class ="content">
         <img class="question-image" src="../assets/womennwomen.jpg" alt="bookstore"/>
         <div class="question">
             I see you need a book for your course in neoliberal ideology that intersects with the military industrial complex. 
@@ -22,10 +23,11 @@ function makeTemplate() {
                 <input type="radio" name="answer" id="answer3" value="3">
                 <label for="answer3">Trick question. I don’t need to read a book on that. I’m just gonna act like I know what I’m talking about.</label>
             </div>
-            <div>
+            <div class="question-button">
                 <button>Submit</button>
             </div>
         </form>
+    </section>
     `;
 }
 

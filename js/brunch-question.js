@@ -4,6 +4,7 @@ import checkGame from './helpers.js';
 
 function makeTemplate() {
     return html`
+    <section class="content">
         <img class="question-image" src="../assets/brunchline.jpg" alt="brunch-line"/>
          <div class="question">
             Currently the wait for brunch is 45 mins to one and a half hours. Would you like to put your name on the list?
@@ -21,10 +22,11 @@ function makeTemplate() {
                 <input type="radio" name="answer" id="answer3" value="3">
                 <label for="answer3">Of course! Brunch is the highlight of my weekend! How else am I gonna post it on my IG???</label>
             </div>
-            <div>
+            <div class="question-button">
                 <button id="brunch-question">Submit</button>
             </div>
         </form>
+    </section>
     `;
 }
 
