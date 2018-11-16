@@ -7,7 +7,7 @@ const mymap = new mapboxgl.Map({
     zoom: 10
 });      
 
-var coffeeMarker = {
+const coffeeMarker = {
     type: ' coffee-marker',
     features: [{
         type: 'coffee-marker',
@@ -23,7 +23,7 @@ var coffeeMarker = {
 };
 coffeeMarker.features.forEach(function(marker) {
 
-    var el = document.createElement('div');
+    const el = document.createElement('div');
     el.className = 'coffee-marker';
 
     new mapboxgl.Marker(el)
@@ -33,7 +33,7 @@ coffeeMarker.features.forEach(function(marker) {
             .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
 });
 
-var brunchMarker = {
+const brunchMarker = {
     type: 'brunch-marker',
     features: [{
         type: 'brunch-marker',
@@ -49,7 +49,7 @@ var brunchMarker = {
 };
 brunchMarker.features.forEach(function(marker) {
 
-    var el = document.createElement('div');
+    const el = document.createElement('div');
     el.className = 'brunch-marker';
 
     new mapboxgl.Marker(el)
@@ -58,13 +58,13 @@ brunchMarker.features.forEach(function(marker) {
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
             .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
 });
-var recordMarker = {
+const recordMarker = {
     type: ' record-marker',
     features: [{
         type: 'record-marker',
         geometry: {
             type: 'Point',
-            coordinates: [-122.684, 45.523]
+            coordinates: [-122.622, 45.526]
         },
         properties: {
             title: 'Everyday Music',
@@ -74,7 +74,7 @@ var recordMarker = {
 };
 recordMarker.features.forEach(function(marker) {
 
-    var el = document.createElement('div');
+    const el = document.createElement('div');
     el.className = 'record-marker';
 
     new mapboxgl.Marker(el)
@@ -83,7 +83,7 @@ recordMarker.features.forEach(function(marker) {
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
             .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
 });
-var bookstoreMarker = {
+const bookstoreMarker = {
     type: ' book-marker',
     features: [{
         type: 'bookstore-marker',
@@ -99,7 +99,7 @@ var bookstoreMarker = {
 };
 bookstoreMarker.features.forEach(function(marker) {
 
-    var el = document.createElement('div');
+    const el = document.createElement('div');
     el.className = 'bookstore-marker';
 
     new mapboxgl.Marker(el)
@@ -108,13 +108,13 @@ bookstoreMarker.features.forEach(function(marker) {
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
             .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
 });
-var storeMarker = {
+const storeMarker = {
     type: ' store-marker',
     features: [{
         type: 'store-marker',
         geometry: {
             type: 'Point',
-            coordinates: [-122.680, 45.517]
+            coordinates: [-122.680, 45.512]
         },
         properties: {
             title: 'Columbia Store',
@@ -124,7 +124,7 @@ var storeMarker = {
 };
 storeMarker.features.forEach(function(marker) {
 
-    var el = document.createElement('div');
+    const el = document.createElement('div');
     el.className = 'store-marker';
 
     new mapboxgl.Marker(el)
@@ -135,7 +135,7 @@ storeMarker.features.forEach(function(marker) {
 });
 bookstoreMarker.features.forEach(function(marker) {
 
-    var el = document.createElement('div');
+    const el = document.createElement('div');
     el.className = 'marker';
 
     new mapboxgl.Marker(el)
@@ -144,7 +144,7 @@ bookstoreMarker.features.forEach(function(marker) {
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
             .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
 });
-var hikingMarker = {
+const hikingMarker = {
     type: ' hiking-marker',
     features: [{
         type: 'hiking-marker',
@@ -160,7 +160,7 @@ var hikingMarker = {
 };
 hikingMarker.features.forEach(function(marker) {
 
-    var el = document.createElement('div');
+    const el = document.createElement('div');
     el.className = 'hiking-marker';
 
     new mapboxgl.Marker(el)
@@ -169,4 +169,81 @@ hikingMarker.features.forEach(function(marker) {
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
             .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
 });
+const chickenMarker = {
+    type: ' chicken-marker',
+    features: [{
+        type: 'chicken-marker',
+        geometry: {
+            type: 'Point',
+            coordinates: [-122.641, 45.512]
+        },
+        properties: {
+            title:'Is it Local?',
+            description:'<a onclick="chicken-link" href="chicken-scene.html"><img id="chicken-pic" src="assets/chicken-scene.jpg"></a>'
+        }
+    }],
+};
+chickenMarker.features.forEach(function(marker) {
+
+    const el = document.createElement('div');
+    el.className = 'chicken-marker';
+
+    new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .addTo(mymap)
+        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+            .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
+});
+const artMarker = {
+    type: ' art-marker',
+    features: [{
+        type: 'art-marker',
+        geometry: {
+            type: 'Point',
+            coordinates: [-122.698, 45.533]
+        },
+        properties: {
+            title:'Good Walls, Bad Art!',
+            description:'<a onclick="art-link" href="art.html"><img id="art-pic" src="assets/art-scene.jpg"></a>'
+        }
+    }],
+};
+artMarker.features.forEach(function(marker) {
+
+    const el = document.createElement('div');
+    el.className = 'art-marker';
+
+    new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .addTo(mymap)
+        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+            .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
+});
+const birdMarker = {
+    type: 'bird-marker',
+    features: [{
+        type: 'bird-marker',
+        geometry: {
+            type: 'Point',
+            coordinates: [-122.650, 45.541]
+        },
+        properties: {
+            title:'Put a bird on it',
+            description:'<a onclick="bird-link" href="bird.html"><img id="bird-pic" src="assets/bird-scene.jpg"></a>'
+        }
+    }],
+};
+birdMarker.features.forEach(function(marker) {
+
+    const el = document.createElement('div');
+    el.className = 'bird-marker';
+
+    new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .addTo(mymap)
+        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+            .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'));
+});
+
+
 
