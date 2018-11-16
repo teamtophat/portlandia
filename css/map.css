@@ -121,7 +121,7 @@ body {
   }
   .mapboxgl-popup {
     width: 100px;
-    height: 50px;
+    height: 150px;
   }
   
   .mapboxgl-popup-content {
@@ -133,3 +133,4 @@ body {
     -webkit-text-stroke-color:black;
     font-size: 10pt; 
   }
+  
