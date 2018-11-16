@@ -6,10 +6,10 @@
     box-shadow: 10px 10px grey;
 
 }
-img {
+#background-image {
   object-fit: cover; 
   width: 100vw; 
-  height: 100vh;
+  height: 110vh;
   position: absolute;
   top: 0;
   left: 0; 
@@ -41,9 +41,14 @@ body {
     object-fit: fill; 
     opacity: 0.9;
 }
+#mapid img{
+  width: 100%; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .coffee-marker {
     background-image: url('/assets/coffee-icon.jpg');
-    background-size: cover;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -51,6 +56,7 @@ body {
     border: 2pt dashed red;
     background-color: rgba(255, 255, 255, 0.8); 
   }
+
 .brunch-marker {
     background-image: url('/assets/brunch.jpg.png');
     background-size: cover;
@@ -91,12 +97,13 @@ body {
     border: 2pt dashed red;
     background-color: rgba(255, 255, 255, 0.8); 
   }
+
   .bookstore-marker {
     background-image: url('/assets/bookstore-icon.jpg');
     background-size: cover;
+    border-radius: 50%;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
     cursor: pointer;
     border: 2pt dashed red;
     background-color: rgba(255, 255, 255, 0.8); 
