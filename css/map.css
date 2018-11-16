@@ -49,6 +49,7 @@ body {
 }
 .coffee-marker {
     background-image: url('/assets/coffee-icon.jpg');
+    background-size: cover;
     width: 40px;
     height: 40px;
     border-radius: 50%;
