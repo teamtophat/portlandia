@@ -4,6 +4,7 @@ import checkGame from './helpers.js';
 
 function makeTemplate() {
     return html`
+        <img class="question-image" src="../assets/stumptown.jpg" alt="stumptown-coffee"/>  
         <form id="coffee-form">
             <div>
                 <label for="answer1">Grande Frappuccino.</label>
