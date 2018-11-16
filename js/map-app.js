@@ -4,8 +4,8 @@ function makeTemplate() {
     return html`
         <header>
             <h2>Explore Portlandia!</h2>
-            <h6>Please click one of the icons on the map and click the 
-            image to reveal a either aquestion or a surprise</h6>
+            <h6>Please click one of the icons on the map then click the 
+            image to reveal either a question or a surprise</h6>
         </header>
     `;
 }
