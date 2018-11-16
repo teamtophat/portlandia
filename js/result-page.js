@@ -12,7 +12,7 @@ function makeTemplate() {
             <section id="portlander"></section>
         </div>
         <button id="play-again">Play Again!</button>
-        <a href="profile.html">About Us </a>
+        <a href="profiles.html">About Us </a>
     `;
 }
 
