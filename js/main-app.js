@@ -4,7 +4,7 @@ import userApi from './user-api.js';
 
 function makeTemplate() {
     return html`
-        <header>
+        <header class="welcome-msg">
             Welcome to Portland, the 90's dream where young people come to retire. Let's see how well you fit in!<br>
         </header>
         <main>

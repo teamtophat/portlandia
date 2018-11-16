@@ -8,7 +8,8 @@ body {
     background-color: #eca542; 
     border: 1px solid rgb(231, 231, 96); 
     box-shadow: 10px 10px #d95500;
-    margin: 40px;
+    margin: 40px 200px;
+    padding: 20px;
 }
 .result-statement {
     font-family: 'Ropa Sans', sans-serif;
