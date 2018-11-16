@@ -24,6 +24,12 @@ header {
     -webkit-text-stroke-width: 2px; 
     -webkit-text-stroke-color:black; 
 }
+
+h6{
+  font-family: 'Ropa Sans', sans-serif;
+  color: black;
+  text-shadow: none;
+}
 body {
     background-size: 15%;
     object-fit: fill; 
