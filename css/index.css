@@ -65,3 +65,7 @@ img {
     padding: 5pt;
 
 }
+
+audio{
+    display: none;
+}
