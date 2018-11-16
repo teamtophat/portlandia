@@ -2,10 +2,10 @@ import html from './html.js';
 
 function makeTemplate() {
     return html`
-        <div>
+        <div class="result-statement">
             <h1>True Portlander</h1>
         </div>
-        <p>
+        <p class="result-description">
             We are elated to meet a fellow Portlander. 
             We see you are wise in the ways of Kombucha, non-GMO, locally sourced, farmed tempeh. 
             You have a keen understanding of how to be passively nice, yet aggressive. 

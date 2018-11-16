@@ -2,10 +2,10 @@ import html from './html.js';
 
 function makeTemplate() {
     return html`
-        <div>
+        <div class="result-statement">
             <h1>Poser</h1>
         </div>
-        <p> 
+        <p class="result-statement"> 
             Unfortunately, you are not Portland enough. 
             You are paleo but don’t do yoga. You take Uber rather than bike 
             and you probably buy from Whole Foods rather than the Farmers Markets. 
