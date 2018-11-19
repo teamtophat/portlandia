@@ -4,21 +4,22 @@
     margin-left:auto;
     margin-right: auto;
     box-shadow: 10px 10px grey;
-
 }
+
 #background-image {
-  object-fit: cover; 
-  width: 100vw; 
-  height: 110vh;
-  position: absolute;
-  top: 0;
-  left: 0; 
-  z-index: -1; 
-
+    object-fit: cover; 
+    width: 100vw; 
+    height: 110vh;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    z-index: -1; 
 }
+
 #record-pic.img {
     max-width: 100px;
 }
+
 header {
     text-align: center; 
     font-family: 'Bungee Shade', cursive;
@@ -32,21 +33,24 @@ header {
 }
 
 h6{
-  font-family: 'Ropa Sans', sans-serif;
-  color: black;
-  text-shadow: none;
+    font-family: 'Ropa Sans', sans-serif;
+    color: black;
+    text-shadow: none;
 }
+
 body {
     background-size: 15%;
     object-fit: fill; 
     opacity: 0.9;
 }
+
 #mapid img{
-  width: 100%; 
-  height: auto;
-  display: block;
-  margin: 0 auto;
+    width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
+
 .coffee-marker {
     background-image: url('/assets/coffee-icon.jpg');
     background-size: cover;
@@ -56,7 +60,7 @@ body {
     cursor: pointer;
     border: 2pt dashed red;
     background-color: rgba(255, 255, 255, 0.8); 
-  }
+}
 
 .brunch-marker {
     background-image: url('/assets/brunch.jpg.png');
@@ -67,7 +71,8 @@ body {
     cursor: pointer;
     border: 2pt dashed red;
     background-color: rgba(255, 255, 255, 0.8); 
-  }
+}
+
 .record-marker {
     background-image: url('/assets/record-icon.jpg'); 
     background-size: cover;
@@ -77,8 +82,9 @@ body {
     cursor: pointer;
     border: 2pt dashed red;
     background-color: rgba(255, 255, 255, 0.8); 
-  }
-  .store-marker {
+}
+
+.store-marker {
     background-image: url('/assets/store-icon.jpg');
     background-size: cover;
     width: 50px;
@@ -87,8 +93,9 @@ body {
     cursor: pointer;
     border: 2pt dashed red;
     background-color: rgba(255, 255, 255, 0.8); 
-  }
-  .hiking-marker {
+}
+
+.hiking-marker {
     background-image: url('/assets/hiking-icon.jpg');
     background-size: cover;
     width: 50px;
@@ -97,9 +104,9 @@ body {
     cursor: pointer;
     border: 2pt dashed red;
     background-color: rgba(255, 255, 255, 0.8); 
-  }
+}
 
-  .bookstore-marker {
+.bookstore-marker {
     background-image: url('/assets/bookstore-icon.jpg');
     background-size: cover;
     border-radius: 50%;
@@ -108,8 +115,9 @@ body {
     cursor: pointer;
     border: 2pt dashed red;
     background-color: rgba(255, 255, 255, 0.8); 
-  }
-  .chicken-marker {
+}
+
+.chicken-marker {
     background-image: url('/assets/chicken.jpg.png');
     background-size: cover;
     width: 50px;
@@ -118,8 +126,9 @@ body {
     cursor: pointer;
     border: 2pt dashed red;
     background-color: rgba(255, 255, 255, 0.8); 
-  }
-  .art-marker {
+}
+
+.art-marker {
     background-image: url('/assets/art.jpg.png');
     background-size: cover;
     width: 50px;
@@ -128,8 +137,9 @@ body {
     cursor: pointer;
     border: 2pt dashed red;
     background-color: rgba(255, 255, 255, 0.8); 
-  }
-  .bird-marker {
+}
+
+.bird-marker {
     background-image: url('/assets/bird.jpg');
     background-size: cover;
     width: 50px;
@@ -138,13 +148,14 @@ body {
     cursor: pointer;
     border: 2pt dashed red;
     background-color: rgba(255, 255, 255, 0.8); 
-  }
-  .mapboxgl-popup {
+}
+
+.mapboxgl-popup {
     width: 100px;
     height: 150px;
-  }
+}
   
-  .mapboxgl-popup-content {
+.mapboxgl-popup-content {
     text-align: center;
     font-family: 'Bangers', cursive;
     color:rgb(247, 247, 91); 
@@ -152,5 +163,5 @@ body {
     -webkit-text-stroke-width: .5px; 
     -webkit-text-stroke-color:black;
     font-size: 10pt; 
-  }
+}
   

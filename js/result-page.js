@@ -1,17 +1,16 @@
 import html from './html.js'; 
-import Portlander from './result-portlander.js'; 
 import questionApi from './question-api.js'; 
+// organize like-imports together
+import Portlander from './result-portlander.js'; 
 import Poser from './result-poser.js';
 import Californian from './result-californian.js';
 
 function makeTemplate() {
     return html`
         <div>
-            <section id="californian"></section>
-            <section id="poser"></section>
-            <section id="portlander"></section>
+            <section></section>
         </div>
-        <button id="play-again">Play Again!</button>
+        <button>Play Again!</button>
         <a href="profiles.html">About Us </a>
     `;
 }
@@ -22,27 +21,32 @@ export default class ResultPage {
     }
     render() {
         let dom = makeTemplate(); 
-        let totalscore = this.scores;
+        // camelCase
+        let totalScore = this.scores;
         
-        if(totalscore <= 10) {
-            const californianSection = dom.getElementById('californian');
-            const californian = new Californian();
-            californianSection.appendChild(californian.render());
-        } else if(totalscore >= 11 && totalscore <= 16) {
-            const poserSection = dom.getElementById('poser');
-            const poser = new Poser();
-            poserSection.appendChild(poser.render());
-        } else {
-            const portlanderSection = dom.getElementById('portlander'); 
-            const portlander = new Portlander();
-            portlanderSection.appendChild(portlander.render());
-        }
-        const form = dom.getElementById('play-again');
+        // you just need one section!
+        const section = dom.querySelector('section');
 
-        form.addEventListener('click', () => {
+        // only make what varies conditional:
+        let result = null;
+        if(totalScore <= 10) {
+            result = new Californian();
+        } else if(totalScore >= 11 && totalScore <= 16) {
+            result = new Poser();
+        } else {
+            result = new Portlander();
+        }
+
+        section.appendChild(result.render());
+
+        // button, not form
+        const button = dom.querySelector('button');
+
+        button.addEventListener('click', () => {
             questionApi.reset(); 
             window.location = './index.html'; 
         });
+
         return dom;  
     }
 }
