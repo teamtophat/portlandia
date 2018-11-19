@@ -24,3 +24,5 @@ All of our awesome TAs at Alchemy Code Lab
 * Ryan Manro, TA
 * Sarah Rehmer, TA
 Alchemy Instructor and CSS Expert: M Jordan Levine
+
+// initial commit
