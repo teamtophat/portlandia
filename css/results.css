@@ -1,6 +1,7 @@
 body {
     background-color: #7FC5BB;
 }
+
 .result-header {
     text-align: center;
     font-family: 'Bangers', cursive;
@@ -11,17 +12,20 @@ body {
     margin: 40px 200px;
     padding: 20px;
 }
+
 .result-statement {
     font-family: 'Ropa Sans', sans-serif;
     font-size: 25px;
     text-align: center;
     margin: 25px 50px 25px 50px;
 }
+
 .result-description {
     font-family: 'Pavanam', sans-serif;
     font-size: 20px;
     padding: 5px; 
 }
+
 #play-again {
     margin: auto;
     display: flex;

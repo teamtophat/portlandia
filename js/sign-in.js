@@ -20,7 +20,7 @@ function makeTemplate() {
 function makeInvite(name, origin) {
     return html`
         <p id="narrow" class="input-direction">Welcome to Portland, ${name}. We're glad to hear you escaped ${origin}. In order to become a true Portlander there are some things that you need to know.</p>
-        <button id="start-game"> Let's take a tour!</button>
+        <a href="main.html">Let's take a tour!</a>
     `;
 }
 class SignIn {
@@ -37,11 +37,12 @@ class SignIn {
             event.preventDefault();
             const inviteDom = makeInvite(elements.name.value, elements.origin.value);
             greetingSection.appendChild(inviteDom);
-            const submitButton = greetingSection.querySelector('#start-game'); 
-            submitButton.addEventListener('click', event => {
-                event.preventDefault();
-                window.location.href = '/main.html';
-            }); 
+            /* Just use a link in the html :) */
+            // const submitButton = greetingSection.querySelector('#start-game'); 
+            // submitButton.addEventListener('click', event => {
+            //     event.preventDefault();
+            //     window.location.href = '/main.html';
+            // }); 
         });
 
         return dom;

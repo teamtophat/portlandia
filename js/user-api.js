@@ -13,10 +13,7 @@ const userApi = {
         return users;
     },
     add(user) {
-        users.push({
-            name: user.name,
-            origin: user.origin
-        });
+        users.push(user);
         saveUser();
     }
 };
