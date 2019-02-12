@@ -1,6 +1,6 @@
 ### Portlandia-This is a game to find out how much of a true Portlander you are. 
 
-![alt text]
+![alt text](https://github.com/teamtophat/teamtophat.github.io/blob/master/portlandia-photo.png)
 
 ## Getting Started
 This is a game app. The first page is a sign in page where you enter your name and city of origin. Then hit the submit button and click on “Take a Tour” which will take you to the main map display page. 
